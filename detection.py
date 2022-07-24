@@ -24,7 +24,7 @@ def mid_line_distance(p1 ,p2, p3, p4):
     return norm(p5 - p6)
 
 def aspect_ratio(landmarks, eye_range):
-    # Get the left and right eye coordinates
+    # Get the eye coordinates
     eye = np.array(
         [np.array([landmarks.part(i).x, landmarks.part(i).y]) 
          for i in eye_range]
